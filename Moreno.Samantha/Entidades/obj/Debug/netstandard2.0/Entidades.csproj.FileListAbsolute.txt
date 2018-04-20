@@ -1,0 +1,9 @@
+D:\UTN\Programacion II\TP1\Moreno.Samantha\Entidades\bin\Debug\netstandard2.0\Entidades.deps.json
+D:\UTN\Programacion II\TP1\Moreno.Samantha\Entidades\bin\Debug\netstandard2.0\Entidades.dll
+D:\UTN\Programacion II\TP1\Moreno.Samantha\Entidades\bin\Debug\netstandard2.0\Entidades.pdb
+D:\UTN\Programacion II\TP1\Moreno.Samantha\Entidades\obj\Debug\netstandard2.0\Entidades.csprojResolveAssemblyReference.cache
+D:\UTN\Programacion II\TP1\Moreno.Samantha\Entidades\obj\Debug\netstandard2.0\Entidades.csproj.CoreCompileInputs.cache
+D:\UTN\Programacion II\TP1\Moreno.Samantha\Entidades\obj\Debug\netstandard2.0\Entidades.AssemblyInfoInputs.cache
+D:\UTN\Programacion II\TP1\Moreno.Samantha\Entidades\obj\Debug\netstandard2.0\Entidades.AssemblyInfo.cs
+D:\UTN\Programacion II\TP1\Moreno.Samantha\Entidades\obj\Debug\netstandard2.0\Entidades.dll
+D:\UTN\Programacion II\TP1\Moreno.Samantha\Entidades\obj\Debug\netstandard2.0\Entidades.pdb
