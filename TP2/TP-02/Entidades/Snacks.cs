@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * MORENO SAMANTHA 2A
+ * 
+ */
+
 namespace Entidades_2017
 {
     public class Snacks: Producto

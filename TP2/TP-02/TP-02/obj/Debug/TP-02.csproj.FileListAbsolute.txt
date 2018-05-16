@@ -24,3 +24,13 @@ D:\UTN\Programacion II\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.
 D:\UTN\Programacion II\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
 D:\UTN\Programacion II\TP2\TP-02\TP-02\obj\Debug\TP-02.exe
 D:\UTN\Programacion II\TP2\TP-02\TP-02\obj\Debug\TP-02.pdb
+D:\UTN\Programacion II\TP1\TP2\TP-02\TP-02\bin\Debug\TP-02.exe.config
+D:\UTN\Programacion II\TP1\TP2\TP-02\TP-02\bin\Debug\TP-02.exe
+D:\UTN\Programacion II\TP1\TP2\TP-02\TP-02\bin\Debug\TP-02.pdb
+D:\UTN\Programacion II\TP1\TP2\TP-02\TP-02\bin\Debug\Entidades.dll
+D:\UTN\Programacion II\TP1\TP2\TP-02\TP-02\bin\Debug\Entidades.pdb
+D:\UTN\Programacion II\TP1\TP2\TP-02\TP-02\obj\Debug\TP-02.csprojResolveAssemblyReference.cache
+D:\UTN\Programacion II\TP1\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+D:\UTN\Programacion II\TP1\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+D:\UTN\Programacion II\TP1\TP2\TP-02\TP-02\obj\Debug\TP-02.exe
+D:\UTN\Programacion II\TP1\TP2\TP-02\TP-02\obj\Debug\TP-02.pdb

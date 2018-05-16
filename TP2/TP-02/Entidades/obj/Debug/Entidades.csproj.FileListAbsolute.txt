@@ -14,3 +14,9 @@ D:\UTN\Programacion II\TP2\TP-02\Entidades\obj\Debug\Entidades.csprojResolveAsse
 D:\UTN\Programacion II\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 D:\UTN\Programacion II\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
 D:\UTN\Programacion II\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb
+D:\UTN\Programacion II\TP1\TP2\TP-02\Entidades\bin\Debug\Entidades.dll
+D:\UTN\Programacion II\TP1\TP2\TP-02\Entidades\bin\Debug\Entidades.pdb
+D:\UTN\Programacion II\TP1\TP2\TP-02\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\UTN\Programacion II\TP1\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\UTN\Programacion II\TP1\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
+D:\UTN\Programacion II\TP1\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb
