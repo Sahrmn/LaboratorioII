@@ -11,10 +11,10 @@ using Entidades;
 
 namespace MiCalculadora
 {
-    public partial class Form1 : Form
+    public partial class LaCalculadora : Form
     {
 
-        public Form1()
+        public LaCalculadora()
         {
             InitializeComponent();
         }
@@ -44,12 +44,12 @@ namespace MiCalculadora
 
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            Numero num1 = new Numero(txtNumero1.Text);
-            Numero num2 = new Numero(txtNumero2.Text);
+            string num1 = txtNumero1.Text;
+            string num2 = txtNumero2.Text;
             string operador = comboOperador.Text;
-            Calculadora calc = new Calculadora();
-            lblResultado.Text = calc.Operar(num1, num2, operador).ToString();
-
+            //Calculadora calc = new Calculadora();
+            //lblResultado.Text = calc.Operar(num1, num2, operador).ToString();
+            lblResultado.Text = Operar(num1, num2, operador).ToString();
         }
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
@@ -78,6 +78,16 @@ namespace MiCalculadora
                 else
                     lblResultado.Text = verificacion;
             }
+        }
+
+        private static double Operar(string num1, string num2, string operador)
+        {
+            double resultado = 0;
+            Numero n1 = new Numero(num1);
+            Numero n2 = new Numero(num2);
+            Calculadora calc = new Calculadora();
+            resultado = calc.Operar(n1, n2, operador);
+            return resultado;
         }
     }
 }

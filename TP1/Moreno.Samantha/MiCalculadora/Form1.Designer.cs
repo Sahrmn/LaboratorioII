@@ -1,6 +1,6 @@
 ﻿namespace MiCalculadora
 {
-    partial class Form1
+    partial class LaCalculadora
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -114,7 +114,7 @@
             this.comboOperador.Location = new System.Drawing.Point(140, 40);
             this.comboOperador.Name = "comboOperador";
             this.comboOperador.Size = new System.Drawing.Size(33, 21);
-            this.comboOperador.TabIndex = 8;
+            this.comboOperador.TabIndex = 1;
             // 
             // lblResultado
             // 
@@ -125,7 +125,7 @@
             this.lblResultado.TabIndex = 9;
             this.lblResultado.Text = "0";
             // 
-            // Form1
+            // LaCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,7 +141,7 @@
             this.Controls.Add(this.txtNumero1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "LaCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Samantha Moreno de 2ºA";
             this.Load += new System.EventHandler(this.Form1_Load);

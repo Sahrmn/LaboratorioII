@@ -71,11 +71,18 @@ namespace Entidades
             return retValue;
         }
 
-        public static string DecimalBinario(double num)
+
+        /// <summary>
+        ///  Convierte un número decimal a binario, en caso de ser posible. Caso contrario retornará "Valor inválido". 
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
+        public static string DecimalBinario(double num)//ver lo del valor invalido -> buscar cuales son los motivos que puede dar para invalido
         {
             string numBinario = "";
             int indice = 0;
             double sumatoria = 0;
+           
             while (Math.Pow(2, indice) < num && Math.Pow(2, indice + 1) < num)
             {
                 indice++;
@@ -97,8 +104,13 @@ namespace Entidades
 
         public string DecimalBinario(string num)
         {
-            double conver = double.Parse(num);
-            string retValue = DecimalBinario(conver);
+            double conver; //= double.Parse(num);
+            string retValue = "Valor inválido";
+            bool verif = double.TryParse(num, out conver);
+            if (verif)
+            {
+                retValue = DecimalBinario(conver);
+            }
             return retValue;
         }
 
