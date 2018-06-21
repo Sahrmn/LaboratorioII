@@ -15,7 +15,8 @@ namespace Entidades
             bool retValue = false;
             try
             {
-                string path = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                path += "\\";
                 path += archivo; //verificar si el path es correcto!!!
                 if (Directory.Exists(path))
                 {

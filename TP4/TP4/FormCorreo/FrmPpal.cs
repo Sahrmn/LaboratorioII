@@ -29,8 +29,9 @@ namespace FormCorreo
             {
                 this._correo += unPaquete;
             }
-            catch(Exception ex)
+            catch(TrackingIdRepetidoException ex)
             {
+                ex = new TrackingIdRepetidoException("El tracking ID " + unPaquete.TrackingID + " ya figura en la lista de envios.");
                 MessageBox.Show(ex.Message);
             }
             ActualizarEstados();
@@ -86,19 +87,10 @@ namespace FormCorreo
 
         private void MostrarInformacion<T>(IMostrar<T> elemento)
         {
+            richTxtMostrar.Text = "";
             if (elemento != null)
             {
-                if (elemento is Paquete)
-                {
-                    richTxtMostrar.Text = (elemento.MostrarDatos(elemento)).ToString();
-                }
-                else
-                {
-                    foreach (Paquete item in ((Correo)elemento).Paquetes)
-                    {
-                        richTxtMostrar.Text += (elemento.MostrarDatos(elemento)).ToString();
-                    }
-                }
+                richTxtMostrar.Text = (elemento.MostrarDatos(elemento)).ToString();   
             }
             try
             {

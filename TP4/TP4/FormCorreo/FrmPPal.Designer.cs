@@ -133,6 +133,7 @@
             // mtxtTrackingID
             // 
             this.mtxtTrackingID.Location = new System.Drawing.Point(9, 43);
+            this.mtxtTrackingID.Mask = "000-00-0000";
             this.mtxtTrackingID.Name = "mtxtTrackingID";
             this.mtxtTrackingID.Size = new System.Drawing.Size(153, 20);
             this.mtxtTrackingID.TabIndex = 1;
@@ -184,6 +185,7 @@
             // 
             // richTxtMostrar
             // 
+            this.richTxtMostrar.Enabled = false;
             this.richTxtMostrar.Location = new System.Drawing.Point(12, 265);
             this.richTxtMostrar.Name = "richTxtMostrar";
             this.richTxtMostrar.ReadOnly = true;
