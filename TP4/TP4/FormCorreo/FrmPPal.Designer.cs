@@ -135,14 +135,14 @@
             this.mtxtTrackingID.Location = new System.Drawing.Point(9, 43);
             this.mtxtTrackingID.Name = "mtxtTrackingID";
             this.mtxtTrackingID.Size = new System.Drawing.Size(153, 20);
-            this.mtxtTrackingID.TabIndex = 17;
+            this.mtxtTrackingID.TabIndex = 1;
             // 
             // btnMostrarTodos
             // 
             this.btnMostrarTodos.Location = new System.Drawing.Point(181, 72);
             this.btnMostrarTodos.Name = "btnMostrarTodos";
             this.btnMostrarTodos.Size = new System.Drawing.Size(106, 39);
-            this.btnMostrarTodos.TabIndex = 13;
+            this.btnMostrarTodos.TabIndex = 4;
             this.btnMostrarTodos.Text = "Mostrar Todos";
             this.btnMostrarTodos.UseVisualStyleBackColor = true;
             this.btnMostrarTodos.Click += new System.EventHandler(this.btnMostrarTodos_Click);
@@ -152,7 +152,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(181, 27);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(106, 39);
-            this.btnAgregar.TabIndex = 12;
+            this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -162,7 +162,7 @@
             this.txtDireccion.Location = new System.Drawing.Point(9, 82);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(153, 20);
-            this.txtDireccion.TabIndex = 11;
+            this.txtDireccion.TabIndex = 2;
             // 
             // label5
             // 

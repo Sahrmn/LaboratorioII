@@ -51,7 +51,6 @@ namespace FormCorreo
 
         private void ActualizarEstados()
         {
-            listBoxEstadoIngresado.DisplayMember = "MostrarDatos";
             listBoxEstadoIngresado.Items.Clear();
             listBoxEstadoEnViaje.Items.Clear();
             listBoxEstadoEntregado.Items.Clear();
@@ -81,6 +80,7 @@ namespace FormCorreo
 
         private void btnMostrarTodos_Click(object sender, EventArgs e)
         {
+            richTxtMostrar.Text = "";
             this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)_correo);
         }
 
@@ -94,7 +94,7 @@ namespace FormCorreo
                 }
                 else
                 {
-                    foreach (Paquete item in (List<Paquete>)elemento)
+                    foreach (Paquete item in ((Correo)elemento).Paquetes)
                     {
                         richTxtMostrar.Text += (elemento.MostrarDatos(elemento)).ToString();
                     }

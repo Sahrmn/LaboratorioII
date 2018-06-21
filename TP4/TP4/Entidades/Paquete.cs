@@ -48,12 +48,12 @@ namespace Entidades
 
         public void MockCicloDeVida()
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(10000);
             this.Estado = EEstado.EnViaje;
             //INFORMAR ESTADO MEDIANTE EVENTO
             EventArgs a = new EventArgs();
             this.InformaEstado.Invoke(this, a);
-            Thread.Sleep(1000);
+            Thread.Sleep(10000);
             this.Estado = EEstado.Entregado;
             //INFORMAR ESTADO MEDIANTE EVENTO
             this.InformaEstado.Invoke(this, a);
@@ -69,7 +69,8 @@ namespace Entidades
 
         public override string ToString()
         {
-            return "Tracking ID: " + this.TrackingID + "\nEstado: " + this.Estado + "\nDireccion: " + this.DireccionEntrega;
+            return ((IMostrar<Paquete>)this).MostrarDatos(this);
+            //return "Tracking ID: " + this.TrackingID + "\nEstado: " + this.Estado + "\nDireccion: " + this.DireccionEntrega;
         }
 
         public static bool operator ==(Paquete p1, Paquete p2)

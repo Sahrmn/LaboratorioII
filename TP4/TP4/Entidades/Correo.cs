@@ -43,7 +43,7 @@ namespace Entidades
         string IMostrar<List<Paquete>>.MostrarDatos(IMostrar<List<Paquete>> elemento)
         {
             string ret = "";
-            foreach (Paquete item in (List<Paquete>)elemento)
+            foreach (Paquete item in ((Correo)elemento).Paquetes)
             {
                 ret += string.Format("{0} para {1} ({2})\n", item.TrackingID, item.DireccionEntrega, item.Estado.ToString());
             }
