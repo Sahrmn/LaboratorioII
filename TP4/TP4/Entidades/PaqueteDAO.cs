@@ -35,11 +35,16 @@ namespace Entidades
                 {
                     retValue = true;
                 }
+                _conexion.Close();
             }
             catch(SqlException e)
             {
                 retValue = false;
                 throw e;//verificar excepcion cuando llame al metodo
+            }
+            finally
+            {
+                _conexion.Close();
             }
             return retValue;
         }

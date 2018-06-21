@@ -61,8 +61,9 @@ namespace Entidades
                     if (item == p)
                     {
                         flag = true;
-                        //TrackingIdRepetidoException e = new TrackingIdRepetidoException("El tracking ID " + p.TrackingID + " ya figura en la lista de envios.");
-                        break;
+                        TrackingIdRepetidoException e = new TrackingIdRepetidoException("El tracking ID " + p.TrackingID + " ya figura en la lista de envios.");
+                        throw e;
+                        //break;
                     }
                 }
                 if (flag == false)

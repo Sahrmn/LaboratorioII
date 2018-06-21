@@ -59,11 +59,11 @@ namespace Entidades
             this.InformaEstado.Invoke(this, a);
             try
             {
-                //PaqueteDAO.Insertar(this);
+                PaqueteDAO.Insertar(this);
             }
-            catch(Exception e)
+            catch (Exception ex)
             {
-                throw e;
+                throw ex; //agregar excepcion
             }
         }
 
