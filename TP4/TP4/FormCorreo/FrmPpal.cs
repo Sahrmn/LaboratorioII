@@ -23,15 +23,15 @@ namespace FormCorreo
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Paquete unPaquete = new Paquete(txtDireccion.Text, mtxtTrackingID.Text);
-            unPaquete.InformaEstado += new DelegadoEstado(this.paq_InformaEstado);//asocio evento con metodo 
             try
             {
+                Paquete unPaquete = new Paquete(txtDireccion.Text, mtxtTrackingID.Text);
+                unPaquete.InformaEstado += new DelegadoEstado(this.paq_InformaEstado);//asocio evento con metodo 
+            
                 this._correo += unPaquete;
             }
-            catch(TrackingIdRepetidoException ex)
+            catch (Exception ex)
             {
-                ex = new TrackingIdRepetidoException("El tracking ID " + unPaquete.TrackingID + " ya figura en la lista de envios.");
                 MessageBox.Show(ex.Message);
             }
             ActualizarEstados();
@@ -90,20 +90,21 @@ namespace FormCorreo
             richTxtMostrar.Text = "";
             if (elemento != null)
             {
-                richTxtMostrar.Text = (elemento.MostrarDatos(elemento)).ToString();   
-            }
-            try
-            {
-                string texto = richTxtMostrar.Text;
-                texto.Guardar("salida.txt");
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                richTxtMostrar.Text = (elemento.MostrarDatos(elemento)).ToString();
+
+                try
+                {
+                    string texto = richTxtMostrar.Text;
+                    texto.Guardar("salida.txt");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
-        private void contextMenuStrip1_Click(object sender, EventArgs e)
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.MostrarInformacion<Paquete>((IMostrar<Paquete>)listBoxEstadoEntregado.SelectedItem);
         }

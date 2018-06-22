@@ -24,7 +24,7 @@ namespace Entidades
         public static bool Insertar(Paquete p)
         {
             bool retValue = false;
-            string sql = "INSERT into Paquetes (direccionEntrega, trackingID, alumno) VALUES(";
+            string sql = "INSERT into Paquietes (direccionEntrega, trackingID, alumno) VALUES(";
             sql += "'" + p.DireccionEntrega + "','" + p.TrackingID + "', 'Moreno.Samantha')";
             try
             {
@@ -37,10 +37,10 @@ namespace Entidades
                 }
                 _conexion.Close();
             }
-            catch(SqlException e)
+            catch(Exception e)
             {
                 retValue = false;
-                throw e;//verificar excepcion cuando llame al metodo
+                throw e;
             }
             finally
             {

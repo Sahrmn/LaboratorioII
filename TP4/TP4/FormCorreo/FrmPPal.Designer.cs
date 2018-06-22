@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.groupBoxEstados = new System.Windows.Forms.GroupBox();
             this.listBoxEstadoEntregado = new System.Windows.Forms.ListBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listBoxEstadoEnViaje = new System.Windows.Forms.ListBox();
             this.listBoxEstadoIngresado = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,8 +46,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.richTxtMostrar = new System.Windows.Forms.RichTextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.groupBoxEstados.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.groupBoxPaquete.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,11 +68,27 @@
             // 
             // listBoxEstadoEntregado
             // 
+            this.listBoxEstadoEntregado.ContextMenuStrip = this.contextMenuStrip1;
             this.listBoxEstadoEntregado.FormattingEnabled = true;
             this.listBoxEstadoEntregado.Location = new System.Drawing.Point(437, 55);
             this.listBoxEstadoEntregado.Name = "listBoxEstadoEntregado";
             this.listBoxEstadoEntregado.Size = new System.Drawing.Size(187, 186);
             this.listBoxEstadoEntregado.TabIndex = 16;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mostrarToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.ShowImageMargin = false;
+            this.contextMenuStrip1.Size = new System.Drawing.Size(100, 26);
+            // 
+            // mostrarToolStripMenuItem
+            // 
+            this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.mostrarToolStripMenuItem.Text = "Mostrar...";
+            this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
             // 
             // listBoxEstadoEnViaje
             // 
@@ -193,12 +211,6 @@
             this.richTxtMostrar.TabIndex = 17;
             this.richTxtMostrar.Text = "";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip1.Click += new System.EventHandler(this.contextMenuStrip1_Click);
-            // 
             // FrmPpal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,11 +219,14 @@
             this.Controls.Add(this.richTxtMostrar);
             this.Controls.Add(this.groupBoxPaquete);
             this.Controls.Add(this.groupBoxEstados);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmPpal";
             this.Text = "Correo UTN por Moreno.Samantha.2A";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPpal_FormClosing);
             this.groupBoxEstados.ResumeLayout(false);
             this.groupBoxEstados.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.groupBoxPaquete.ResumeLayout(false);
             this.groupBoxPaquete.PerformLayout();
             this.ResumeLayout(false);
@@ -236,6 +251,7 @@
         private System.Windows.Forms.MaskedTextBox mtxtTrackingID;
         private System.Windows.Forms.RichTextBox richTxtMostrar;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
     }
 }
 

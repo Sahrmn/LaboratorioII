@@ -68,10 +68,18 @@ namespace Entidades
                 }
                 if (flag == false)
                 {
+                    
                     c._paquetes.Add(p);
-                    Thread hiloPaquete = new Thread(p.MockCicloDeVida);
-                    c._mockPaquetes.Add(hiloPaquete);
-                    hiloPaquete.Start();
+                    try
+                    {
+                        Thread hiloPaquete = new Thread(p.MockCicloDeVida);
+                        c._mockPaquetes.Add(hiloPaquete);
+                        hiloPaquete.Start();
+                    }
+                    catch(Exception ex)
+                    {
+                        throw ex;
+                    }
                 }
             }
             return c;

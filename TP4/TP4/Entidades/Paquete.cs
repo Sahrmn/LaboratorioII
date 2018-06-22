@@ -14,6 +14,7 @@ namespace Entidades
         private string _direccionEntrega;
         private EEstado _estado;
         private string _trackingID;
+        public Exception HayExcepcion = null;
 
         #region Propiedades
 
@@ -57,13 +58,12 @@ namespace Entidades
             this.Estado = EEstado.Entregado;
             //INFORMAR ESTADO MEDIANTE EVENTO
             this.InformaEstado.Invoke(this, a);
-            try
+
+            bool resp = PaqueteDAO.Insertar(this);
+            if (resp == false)
             {
-                PaqueteDAO.Insertar(this);
-            }
-            catch (Exception ex)
-            {
-                throw ex; //agregar excepcion
+                Exception ex = new Exception("Ocurrio un error al intentar insertar en la bd.");
+                throw ex;
             }
         }
 

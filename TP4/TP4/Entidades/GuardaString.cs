@@ -17,8 +17,8 @@ namespace Entidades
             {
                 string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                 path += "\\";
-                path += archivo; //verificar si el path es correcto!!!
-                if (Directory.Exists(path))
+                path += archivo; 
+                if (File.Exists(path))
                 {
                     StreamWriter escribe = new StreamWriter(path,true);
                     escribe.WriteLine(texto);
